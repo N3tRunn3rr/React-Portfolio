@@ -11,3 +11,113 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Footer CSS */
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.Footer a {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.Footer a svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* NavBar CSS */
+nav {
+  background-color: #0c0d0efb;
+  height: 75px; /* reduce the height of the navbar */
+  width: 100%; /* make the width of the navbar 100% of the page */
+  position: fixed; /* make the navbar fixed so that it stays on top */
+  top: 0;
+  z-index: 3;
+  
+}
+
+a.contact-link {
+  color: rgb(255, 254, 254);
+  font-family: monospace;
+  text-decoration: none;
+
+}
+
+
+nav {
+  display: block;
+  text-align: center;
+  position: relative; /* change the position to relative */
+  margin: 0 auto; /* center the navbar horizontally */
+  max-width: 100%; /* add a max-width to the navbar */
+  height: 90px;
+}
+
+nav a {
+  font-size: 22px;
+  color: #f1f1ff;
+  display: inline-block; /* change display to inline-block */
+  line-height: 90px; /* change line-height to match the height of the navbar */
+  padding: 0 20px; 
+  position: relative;
+  left: 450px;
+}
+
+nav a i {
+  transition: none;
+}
+
+a:hover {
+  color: rgb(234, 234, 18);
+}
+
+
+nav a:hover:after {
+  opacity: 1;
+}
+
+/* Home CSS */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  border-style: none;
+}
+
+
+.main-content {
+  width: 100%;
+  display: flex;
+  height: 600px;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  margin: 10px;
+
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c2237;
+}
+
+.description {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #58616f;
+}
