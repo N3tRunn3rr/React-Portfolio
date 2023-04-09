@@ -59,6 +59,7 @@ function Portfolio() {
                     image={project.image}
                     description={project.description}
                     link={project.link}
+                    
                 />
             ))}
         </div>
