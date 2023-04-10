@@ -21,12 +21,11 @@ nav {
   position: fixed; /* make the navbar fixed so that it stays on top */
   top: 0;
   z-index: 3;
-  
 }
 
-a.contact-link, a.home-link, a.portfolio-link {
-  color: rgb(255, 254, 254);
-  font-family: monospace;
+.nav-link {
+  color: #196F3D;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
 
 }
@@ -43,7 +42,7 @@ nav {
 
 nav a {
   font-size: 22px;
-  color: #f1f1ff;
+  color: #196F3D;
   display: inline-block; /* change display to inline-block */
   line-height: 90px; /* change line-height to match the height of the navbar */
   padding: 0 20px; 
@@ -56,139 +55,233 @@ nav a i {
 }
 
 a:hover {
-  color: rgb(234, 234, 18);
+  color: #196F3D;
 }
 
 
-nav a:hover:after {
-  opacity: 1;
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #196F3D;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #196F3D;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #196F3D;
+  border-radius: 12px;
 }
 
 /* Home CSS */
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+
+.main-name {
+  color: #196F3D;
+}
+
+#tsparticles {
+  position: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   width: 100%;
-  background-size: cover;
-  border-style: none;
-  background-image: url(../public/background.jpg);
+  height: 100%;
 }
 
-
-.main-content {
-  width: 100%;
-  display: flex;
-  height: 400px;
+.home-header {
+  padding-top: 80px !important;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background-size: cover;
-  border-style: none;
+.home-page {
+  background-image: var(--section-background-color) !important;
+
 }
 
-.box {
-  flex: 1;
-  padding: 20px;
-  border: none;
-  margin: 10px;
+.home-section {
+  position: relative;
+  z-index: -1;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+  /* background-image: var(--section-background-color) !important; */
 }
 
-.title {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: white;
+.home-content {
+  padding: 9rem 0 2rem !important;
+  color: black;
+  text-align: left;
 }
 
-.about-me {
-  font-size: 24px;
-  margin-bottom: 40px;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
-  border: solid white 1px;
-  border-style: solid;
-  padding: 20px;
-  color: white;
+.heading {
+  font-size: 2.4em !important;
+  padding-left: 50px !important;
 }
 
-/* Contact page CSS */
-.contact {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
+.heading-name {
+  font-size: 2.5em !important;
+  padding-left: 45px !important;
+}
+
+.main-name {
+  color: #196F3D;
+}
+
+.Typewriter__wrapper {
+  font-size: 2.2em !important;
+  color: #196F3D !important;
+  font-weight: 600 !important;
+}
+.Typewriter__cursor {
+  font-size: 2.4em !important;
+  color: #196F3D !important;
+}
+
+.home-about-section {
+  position: relative;
+  padding-bottom: 70px !important;
+  padding-top: 70px !important;
+  /* background-image: var(--section-background-color) !important; */
+}
+
+.home-about-description {
+  color: black !important;
+  padding-top: 100px !important;
+  padding-bottom: 20px !important;
   text-align: center;
 }
 
-
-.contact h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  height: 75px;
+.home-about-body {
+  padding-top: 50px;
+  font-size: 1.2em !important;
+  text-align: left;
 }
 
-.contact p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  height: 75px;
+.home-about-social {
+  text-align: center !important;
+  padding-top: 25px;
+  color: black !important;
 }
 
-.contact-info {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+.home-about-social-links {
+  justify-content: center !important;
+  padding-top: 15px !important;
+  display: inline-block !important;
+  position: relative !important;
+  padding-inline-start: 0 !important;
 }
 
-.contact-info div {
-  margin-right: 10px;
+.home-social-icons {
+  position: relative !important;
+  display: inline-block !important;
+  width: 40px !important;
+  height: 40px !important;
+  text-align: center !important;
+  font-size: 1.2em !important;
+  line-height: 2em !important;
+  background: #196F3D !important;
+  border-radius: 50% !important;
+  transition: 0.5s !important;
 }
 
-.contact-info span {
-  font-weight: bold;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-label {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-input,
-textarea {
+.home-social-icons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
+  height: 100%;
+  border-radius: 50%;
+  background: #196F3D;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
 }
 
-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
+.home-social-icons:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #196F3D;
 }
 
-button:hover {
-  background-color: #0062cc;
+.home-social-icons:hover {
+  color: #196F3D;
+  box-shadow: 0 0 5px #196F3D;
+  text-shadow: 0 0 2px #196F3D;
+}
+
+.social-icons {
+  display: inline-block !important;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.icon-colour {
+  color: #196F3D !important;
+}
+
+/* About CSS */
+.about-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+.tech-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid #196F3D !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px #196F3D !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
+
+@media (max-width: 767px) {
+  .tech-icons {
+    margin: 10px !important;
+  }
+}
+
+.tech-icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid #196F3D !important;
+}
+.tech-icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
+}
+
+.quote-card-view {
+  border: none !important;
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.about-activity {
+  list-style: none !important;
+  text-align: left !important;
+  padding-left: 1px !important;
+}
+
+@media (max-width: 767px) {
+  .about-img {
+    padding-top: 0 !important;
+  }
 }
 
 /* Portfolio CSS */
@@ -196,6 +289,12 @@ a:visited {
   text-decoration: none; 
   color: white; 
  }
+
+.project-section {
+  background-image: var(--section-background-color) !important;
+  height: 100vh;
+  margin-top: 0px;
+}
 
 
 /* Footer CSS */
