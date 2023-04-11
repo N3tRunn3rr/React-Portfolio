@@ -100,7 +100,8 @@ a:hover {
 }
 
 .home-page {
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color); */
+  background-image: './Assets/background.jpg';
 
 }
 
@@ -111,7 +112,6 @@ a:hover {
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
-  /* background-image: var(--section-background-color) !important; */
 }
 
 .home-content {
@@ -222,7 +222,7 @@ a:hover {
   padding-left: 15px;
 }
 
-.icon-colour {
+.icon-color {
   color: #196F3D !important;
 }
 
@@ -231,8 +231,8 @@ a:hover {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  /* background-image: var(--section-background-color) !important; */
+  color: black !important;
 }
 
 .tech-icons {
@@ -268,7 +268,7 @@ a:hover {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: black !important;
   background-color: transparent !important;
 }
 
@@ -291,9 +291,67 @@ a:visited {
  }
 
 .project-section {
-  background-image: var(--section-background-color) !important;
-  height: 100vh;
-  margin-top: 0px;
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  /* background-image: var(--section-background-color) !important; */
+}
+
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px #196F3D !important;
+  color: black !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(1, 68, 7, 0.561) !important;
+}
+
+
+.card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+}
+
+.blog-img {
+  padding: 0px !important;
+  opacity: 0.8 !important;
+  border-radius: 0px !important;
+}
+
+.btn-primary {
+  color: white !important;
+  background-color: #196F3D !important;
+  border-color: #196F3D !important;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #196F3D !important;
+  border-color: #196F3D !important;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.project-heading {
+  color: black !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
 }
 
 

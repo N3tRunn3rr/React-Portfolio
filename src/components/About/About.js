@@ -18,7 +18,7 @@ function About() {
             md={7}
             style={{
               justifyContent: "center",
-              paddingTop: "30px",
+              paddingTop: "0px",
               paddingBottom: "50px",
             }}
           >
@@ -26,12 +26,6 @@ function About() {
               Who I am
             </h1>
             <Aboutcard />
-          </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
           </Col>
         </Row>
         <h1 className="project-heading">
